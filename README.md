@@ -1,5 +1,5 @@
 # 알고리즘 스터디
-📌 Programmers 코딩테스트 연습
+📌 Programmers 코딩테스트 연습 (JavaScript)
 
 <br>
 
