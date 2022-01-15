@@ -1,5 +1,7 @@
-# 알고리즘 스터디
-📌 Programmers 코딩테스트 연습 (JavaScript)
+# JS 알고리즘 스터디
+🎯 목적 : Programmers 코딩테스트 연습 (JavaScript)<br>
+📝 시작일 : 2021년 12월 29일 ~<br>
+🧑🏻 구성원 : 강기찬, 주혜린
 
 <br>
 
