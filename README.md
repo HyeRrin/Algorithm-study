@@ -1,4 +1,8 @@
 # 알고리즘 스터디
+📌 Programmers 코딩테스트 연습
+
+<br>
+
 ## 1주차
 - Day1 (12/29) : <a href="https://programmers.co.kr/learn/courses/30/lessons/12944">평균 구하기</a>, <a href="https://programmers.co.kr/learn/courses/30/lessons/12948">핸드폰 번호 가리기</a>
 
