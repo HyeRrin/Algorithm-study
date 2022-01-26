@@ -6,7 +6,7 @@
 
 <br>
 
-## 📆 일정
+## 📆 진도
 ### 1주차
 - Day1 (12/29) : <a href="https://programmers.co.kr/learn/courses/30/lessons/12944">평균 구하기</a>, <a href="https://programmers.co.kr/learn/courses/30/lessons/12948">핸드폰 번호 가리기</a>
 
@@ -23,3 +23,6 @@
 - Day7 (01/18) : <a href="https://programmers.co.kr/learn/courses/30/lessons/12935">제일 작은 수 제거하기</a>, <a href="https://programmers.co.kr/learn/courses/30/lessons/12940">최대공약수와 최소공배수</a>
 - Day8 (01/21) : <a href="https://programmers.co.kr/learn/courses/30/lessons/12954">x만큼 간격이 있는 n개의 숫자</a>, <a href="https://programmers.co.kr/learn/courses/30/lessons/12930">이상한 문자 만들기</a>
 
+### 5주차
+- Day9 (01/25) : <a href="https://programmers.co.kr/learn/courses/30/lessons/12928">약수의 합</a>, <a href="https://programmers.co.kr/learn/courses/30/lessons/12926">시저 암호</a>
+- Day10 (01/28) : <a href="https://programmers.co.kr/learn/courses/30/lessons/12919">서울에서 김서방 찾기</a>, <a href="https://programmers.co.kr/learn/courses/30/lessons/12922">수박수박수박수박수박수?</a>, <a href="https://programmers.co.kr/learn/courses/30/lessons/12925">문자열을 정수로 바꾸기</a>
