@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    // forEach 작동원리 임의설명
+    // function forEach(predicate, thisArg) {
+    //     for(let i = 0; i < a.length; i++) {
+    //         predicate(a[i], i);
+    //     }
+    // }
+
+    // forEach
+    a = [10, 11, 12, 13, 14, 15];
+    a.forEach(function (value, index) {
+      console.log(value, index, this);
+    }, [1, 2]);
+
+    // map 작동원리 임의설명
+    // function map(predicate, thisArg){
+    //   let list = [];
+    //   for(let i = 0; i < a.length; i++){
+    //     list.push(predicate(a[i], i));
+    //   }
+    //   return list;
+    // }
+
+    // map
+    a = [10, 11, 12, 13, 14, 15];
+    let answer = a.map(function(value, index) {
+      if(value % 2 == 0) {
+        return value;
+      }
+    }, [1, 2]);
+    console.log(answer);
+
+    // filter 작동원리 임의설명
+    // function filter(predicate, thisArg){
+    //   let list = [];
+    //   for(let i = 0; i < a.length; i++){
+    //     if(predicate(a[i], i)) list.push(a[i]);
+    //   }
+    //   return list;
+    // }
+
+    // filter
+    a = [10, 11, 12, 13, 14, 15];
+    let answer = a.filter(function (value, index) {
+      return value % 2 == 0;
+    }, [1, 2]);
+    console.log(answer);
+
+    // reduce 작동원리 임의설명
+    // function reduce(predicate, value){
+    //   let result = value;
+    //   for(let i = 0; i < a.length; i++){
+    //     result = predicate(result, a[i]);
+    //   }
+    //   return result;
+    // }
+
+    // reduce
+    a = [10, 11, 12, 13, 14, 15];
+    let answer = a.reduce(function (accumulate, value) {
+      return accumulate + value;
+    }, 0);
+    console.log(answer);
+  </script>
+</body>
