@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    function solution(arr) {
+      let odd = [];
+      let sum = 0;
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+          odd.push(arr[i]);
+          sum += arr[i];
+        }
+      }
+      for (let j = 1; j < odd.length + 1; j++) {
+        let min = odd[0];
+        if (min > odd[j]) {
+          min = odd[j];
+        }
+        return sum + '\n' + min;
+      }
+    }
+
+    arr = [12, 77, 38, 41, 53, 92, 85];
+    console.log(solution(arr));
+  </script>
+</body>
+
+</html>
