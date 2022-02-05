@@ -8,6 +8,7 @@
 <body>
   <script>
     function solution(a, b, c) {
+      // solution 1
       let answer = 0;
       if (a > b) {
         if (b > c) {
@@ -23,6 +24,18 @@
         } else {
           answer += c;
         }
+      }
+      return answer;
+
+      // solution 2
+      let answer;
+      if (a < b) {
+        answer = a;
+      } else {
+        answer = b;
+      }
+      if (c < answer) {
+        answer = c;
       }
       return answer;
     }

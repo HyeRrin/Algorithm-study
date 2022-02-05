@@ -8,6 +8,16 @@
 <body>
   <script>
     function solution(day, arr) {
+      // solution 1
+      let answer = 0;
+      for (let i = 0; i < arr.length; i++) {
+        if (day == String(arr[i])[1]) {
+          answer += 1;
+        }
+      }
+      return answer;
+
+      // solution 2
       let answer = 0;
       for (let x of arr) {
         if (x % 10 === day) {

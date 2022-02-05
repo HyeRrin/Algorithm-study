@@ -8,9 +8,14 @@
 <body>
   <script>
     function solution(n) {
+      // solution 1
+      if (n % 12 > 0) {
+        return parseInt((n / 12) + 1);
+      }
+
+      // solution 2
       return Math.ceil(n / 12); // 올림
     }
-
     console.log(solution(178));
   </script>
 </body>
