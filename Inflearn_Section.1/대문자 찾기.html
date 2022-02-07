@@ -8,8 +8,28 @@
 <body>
   <script>
     function solution(s) {
+      // solution 1
       let arr = s.split('');
       return arr.filter((v, i) => v === v.toUpperCase()).length;
+
+      // solution 2
+      let answer = 0;
+      for (let x of s) {
+        if (x === x.toUpperCase()) {
+          answer++;
+        }
+      }
+      return answer;
+
+      // solution 3
+      let answer = 0;
+      for (let x of s) {
+        let num = x.charCodeAt();
+        if (num >= 65 && num <= 90) {
+          answer++;
+        }
+      }
+      return answer;
     }
 
     let str = "KoreaTimeGood";
