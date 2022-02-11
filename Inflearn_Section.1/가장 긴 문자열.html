@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      // solution 1
+      function solution(s) {
+        let tmp = s.map((v, i) => v.length);
+        let max = tmp[0];
+        for (let i = 0; i < tmp.length; i++) {
+          if (max < tmp[i]) {
+            max = tmp[i];
+          }
+        }
+        return max;
+      }
+      let str = ["teacher", "time", "student", "beautiful", "good"];
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
