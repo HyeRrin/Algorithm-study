@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        // solution 1
+        let answer = "";
+        for (let i = 0; i < s.length; i++) {
+          if (!answer.includes(s[i])) {
+            answer += s[i];
+          }
+        }
+        return answer;
+
+        // solution 2
+        let answer = "";
+        for (let i = 0; i < s.length; i++) {
+          if (s.indexOf(s[i]) === i) {
+            answer += s[i];
+          }
+        }
+        return answer;
+      }
+      console.log(solution("ksekkset"));
+    </script>
+  </body>
+</html>
