@@ -6,6 +6,28 @@
   <body>
     <script>
       function solution(arr) {
+        let answer = Number.MIN_SAFE_INTEGER; // 정수 중 가장 작은 수로 초기화
+        let n = arr.length;
+        let rowSum = 0;
+        let columnSum = 0;
+        // 행의합과 열의합
+        for (let i = 0; i < n; i++) {
+          rowSum = 0;
+          columnSum = 0;
+          for (let j = 0; j < n; j++) {
+            rowSum += arr[i][j];
+            columnSum += arr[j][i];
+          }
+          answer = Math.max(answer, rowSum, columnSum);
+        }
+        rowSum = 0;
+        columnSum = 0;
+        // 대각선의 합
+        for (let i = 0; i < n; i++) {
+          rowSum += arr[i][i]; // 왼쪽에서 오른쪽 대각선
+          columnSum += arr[i][n - i - 1]; // 오른쪽에서 왼쪽 대각선
+        }
+        answer = Math.max(answer, rowSum, columnSum);
         return answer;
       }
 
