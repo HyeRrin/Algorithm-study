@@ -24,21 +24,17 @@
         return answer;
       }
 
-      // 다른 풀이
+      // 다른 풀이 (Two Pointers Algorithm)
       function solution2(m, arr) {
         let answer = 0;
-        let lt = 0;
+        let left = 0;
         let sum = 0;
-        for (let rt = 0; rt < arr.length; rt++) {
-          sum += arr[rt];
-          if (sum === m) {
-            answer++;
-          }
+        for (let right = 0; right < arr.length; right++) {
+          sum += arr[right];
+          if (sum === m) answer++;
           while (sum >= m) {
-            sum -= arr[lt++];
-            if (sum === m) {
-              answer++;
-            }
+            sum -= arr[left++];
+            if (sum === m) answer++;
           }
         }
         return answer;
