@@ -5,16 +5,35 @@
   </head>
   <body>
     <script>
-      function solution(c, arr) {
-        let answer = Number.MIN_SAFE_INTEGER;
-        let n = arr.length;
+      // 나의 풀이
+      function solution1(c, arr) {
+        let answer = 0;
         function DFS(L, sum) {
-          if (sum > c) return;
-          if (L === n) {
+          if (L === arr.length) {
+            if (answer < sum && sum < c) {
+              answer = sum;
+            }
+          } else {
+            DFS(L + 1, sum + arr[L]);
+            DFS(L + 1, sum);
+          }
+        }
+        DFS(0, 0);
+        return answer;
+      }
+
+      // 다른풀이
+      function solution2(c, arr) {
+        let answer = Number.MIN_SAFE_INTEGER;
+        function DFS(L, sum) {
+          if (sum > c) {
+            return;
+          }
+          if (L === arr.length) {
             answer = Math.max(answer, sum);
           } else {
-            DFS(L + 1, sum + arr[L]); // 태운 경우
-            DFS(L + 1, sum); // 태우지 않은 경우
+            DFS(L + 1, sum + arr[L]);
+            DFS(L + 1, sum);
           }
         }
         DFS(0, 0);
@@ -22,7 +41,8 @@
       }
 
       let arr = [81, 58, 42, 33, 61];
-      console.log(solution(259, arr));
+      console.log(solution1(259, arr));
+      console.log(solution2(259, arr));
     </script>
   </body>
 </html>
