@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>조합의 경우수</title>
+  </head>
+  <body>
+    <script>
+      // 메모이제이션
+      function solution(n, r) {
+        let answer;
+        let dy = Array.from(Array(6), () => Array(5).fill(0));
+        console.log(dy);
+        function DFS(n, r) {
+          if (dy[n][r] > 0) {
+            return dy[n][r]; // 저장해둔 값 리턴
+          }
+          if (n === r || r === 0) {
+            return 1;
+          } else {
+            return (dy[n][r] = DFS(n - 1, r - 1) + DFS(n - 1, r));
+          }
+        }
+        answer = DFS(n, r);
+        return answer;
+      }
+
+      console.log(solution(5, 3));
+    </script>
+  </body>
+</html>
